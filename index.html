@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shresth Sanskar — Cloud & DevOps Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">ss<span class="accent">.</span></span>
+      <ul class="nav-links">
+        <li><a href="#about">about</a></li>
+        <li><a href="#experience">experience</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#certifications">certs</a></li>
+        <li><a href="#contact" class="nav-cta">hire me</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="closeMobile()">about</a>
+    <a href="#experience" onclick="closeMobile()">experience</a>
+    <a href="#skills" onclick="closeMobile()">skills</a>
+    <a href="#projects" onclick="closeMobile()">projects</a>
+    <a href="#certifications" onclick="closeMobile()">certs</a>
+    <a href="#contact" onclick="closeMobile()">hire me</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-inner">
+      <div class="hero-tag">
+        <span class="dot pulse"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero-name">Shresth<br/><span class="outline-text">Sanskar</span></h1>
+      <p class="hero-role">
+        <span class="typed-wrap">
+          <span class="typed" id="typed"></span><span class="cursor-blink">|</span>
+        </span>
+      </p>
+      <p class="hero-summary">
+        2.5+ years architecting scalable AWS environments · Terraform · Docker · Kubernetes · CI/CD
+      </p>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">30<span class="accent">%</span></span><span class="stat-label">faster deployments</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">99.9<span class="accent">%</span></span><span class="stat-label">uptime maintained</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">4<span class="accent">x</span></span><span class="stat-label">cloud certifications</span></div>
+      </div>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-label">01 / about</div>
+      <div class="about-grid">
+        <div class="about-left">
+          <h2 class="section-heading">Building cloud<br/>infrastructure<br/><span class="accent">that scales.</span></h2>
+        </div>
+        <div class="about-right">
+          <p>I'm a <strong>Cloud & DevOps Engineer</strong> based in Bengaluru, India, currently at <strong>Cognizant</strong>. I specialize in designing resilient, secure, and cost-optimized AWS environments — from multi-tier VPC architectures to fully automated CI/CD pipelines.</p>
+          <p>My work bridges infrastructure and software: I write Terraform modules, containerize workloads, and build the automation that keeps production running and improve deployment by 40%</p>
+          <p>When I'm not deploying to AWS, I'm earning certifications — 4 major cloud certs and counting.</p>
+          <div class="about-info">
+            <div class="info-row"><span class="info-key">location</span><span class="info-val">Bengaluru, India</span></div>
+            <div class="info-row"><span class="info-key">current role</span><span class="info-val">AWS Cloud Engineer · Cognizant</span></div>
+            <div class="info-row"><span class="info-key">education</span><span class="info-val">B.Tech · Haldia Institute of Technology · 9.25 GPA</span></div>
+            <div class="info-row"><span class="info-key">email</span><span class="info-val"><a href="mailto:shresthsanskar2000@gmail.com">shresthsanskar2000@gmail.com</a></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-label">02 / experience</div>
+      <h2 class="section-heading">Work <span class="accent">History</span></h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-left">
+            <div class="timeline-date">Aug 2023 — Present</div>
+            <div class="timeline-company">Cognizant</div>
+            <div class="timeline-loc">Bengaluru, India</div>
+          </div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-right">
+            <div class="timeline-role">AWS Cloud Engineer</div>
+            <ul class="timeline-bullets">
+              <li>Leveraged <span class="tag">GitHub Actions</span> + <span class="tag">Terraform</span> to automate EC2 provisioning with CIS-hardened bootstrap scripts — enhanced security posture by <strong>92%</strong> and cut setup time by <strong>40%</strong></li>
+              <li>Orchestrated end-to-end deployment workflows via <span class="tag">CodePipeline</span> + <span class="tag">CodeDeploy</span>, reducing manual intervention by <strong>30%</strong></li>
+              <li>Administered <strong>50+ EC2 instances</strong> with automated patching via Systems Manager and VPC Flow Log monitoring, maintaining <strong>98% uptime</strong></li>
+              <li>Developed <span class="tag">Python</span> + <span class="tag">Bash</span> automation for IAM lifecycle management — reduced operational overhead by <strong>20%</strong></li>
+              <li>Containerized workloads with <span class="tag">Docker</span> and deployed on <span class="tag">AWS EKS</span>, improving scalability by <strong>15%</strong></li>
+              <li>Built monitoring dashboards in <span class="tag">CloudWatch</span> + <span class="tag">Grafana</span> — reduced manual tracking effort by <strong>35%</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-label">03 / skills</div>
+      <h2 class="section-heading">Technical <span class="accent">Arsenal</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+            <span>Cloud Platforms</span>
+          </div>
+          <div class="skill-tags">
+            <span class="stag">EC2</span><span class="stag">VPC</span><span class="stag">IAM</span><span class="stag">S3</span><span class="stag">Lambda</span><span class="stag">RDS</span><span class="stag">EKS</span><span class="stag">ECS</span><span class="stag">ECR</span><span class="stag">CloudFront</span><span class="stag">CodePipeline</span><span class="stag">CloudFormation</span><span class="stag">Systems Manager</span><span class="stag">Security Hub</span><span class="stag">Google Cloud</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4v16M20 4v16M8 8h8M8 12h8M8 16h8"/></svg>
+            <span>DevOps & CI/CD</span>
+          </div>
+          <div class="skill-tags">
+            <span class="stag">Terraform</span><span class="stag">Docker</span><span class="stag">Kubernetes</span><span class="stag">Ansible</span><span class="stag">GitHub Actions</span><span class="stag">Jenkins</span><span class="stag">ArgoCD</span><span class="stag">CI/CD</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+            <span>Languages & Scripting</span>
+          </div>
+          <div class="skill-tags">
+            <span class="stag">Python</span><span class="stag">Golang</span><span class="stag">Bash</span><span class="stag">Shell</span><span class="stag">PowerShell</span><span class="stag">YAML</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+            <span>Monitoring & Infra</span>
+          </div>
+          <div class="skill-tags">
+            <span class="stag">CloudWatch</span><span class="stag">Grafana</span><span class="stag">Linux Admin</span><span class="stag">Windows Server</span><span class="stag">GIT</span><span class="stag">Load Balancing</span><span class="stag">ITIL</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-label">04 / projects</div>
+      <h2 class="section-heading">Featured <span class="accent">Projects</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <div class="project-num">01</div>
+            <a href="#" class="project-link" aria-label="View project">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+          <h3 class="project-title">EduTech LMS — AWS ECS Fargate</h3>
+          <p class="project-desc">Containerized a full LMS frontend with Docker and orchestrated deployments on AWS ECS Fargate. Configured Application Load Balancers, managed ECR repositories, and enforced IAM roles. Achieved 99.9% availability and reduced MTTR by 40%.</p>
+          <div class="project-tags">
+            <span>AWS ECS</span><span>ECR</span><span>ALB</span><span>Docker</span><span>IAM</span>
+          </div>
+          <div class="project-metrics">
+            <div class="metric"><span class="metric-val">99.9%</span><span class="metric-label">uptime</span></div>
+            <div class="metric"><span class="metric-val">40%</span><span class="metric-label">lower MTTR</span></div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <div class="project-num">02</div>
+            <a href="#" class="project-link" aria-label="View project">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+          <h3 class="project-title">AWS Two-Tier Application Infrastructure</h3>
+          <p class="project-desc">Designed and provisioned a secure, scalable two-tier web infrastructure using Terraform. Automated VPC, EC2, and RDS setup with automated scaling capabilities. Supports 10,000 concurrent users with zero downtime.</p>
+          <div class="project-tags">
+            <span>Terraform</span><span>AWS VPC</span><span>ALB</span><span>CloudFront</span><span>EC2</span><span>RDS</span>
+          </div>
+          <div class="project-metrics">
+            <div class="metric"><span class="metric-val">10K</span><span class="metric-label">concurrent users</span></div>
+            <div class="metric"><span class="metric-val">0</span><span class="metric-label">downtime</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+    <div class="container">
+      <div class="section-label">05 / certifications</div>
+      <h2 class="section-heading">Cloud <span class="accent">Certifications</span></h2>
+      <div class="certs-grid">
+
+        <div class="cert-card reveal">
+          <div class="cert-badge aws">AWS</div>
+          <div class="cert-body">
+            <div class="cert-name">Solutions Architect — Associate</div>
+            <div class="cert-issuer">Amazon Web Services</div>
+            <div class="cert-date">Nov 2024</div>
+          </div>
+          <a href="#" class="cert-verify">Verify ↗</a>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge aws">AWS</div>
+          <div class="cert-body">
+            <div class="cert-name">CloudOps Administrator — Associate</div>
+            <div class="cert-issuer">Amazon Web Services</div>
+            <div class="cert-date">May 2025</div>
+          </div>
+          <a href="#" class="cert-verify">Verify ↗</a>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge hashi">HCP</div>
+          <div class="cert-body">
+            <div class="cert-name">Terraform Associate (003)</div>
+            <div class="cert-issuer">HashiCorp</div>
+            <div class="cert-date">Oct 2025</div>
+          </div>
+          <a href="#" class="cert-verify">Verify ↗</a>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge gcp">GCP</div>
+          <div class="cert-body">
+            <div class="cert-name">Associate Cloud Engineer</div>
+            <div class="cert-issuer">Google Cloud</div>
+            <div class="cert-date">Jul 2024</div>
+          </div>
+          <a href="#" class="cert-verify">Verify ↗</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-label">06 / contact</div>
+      <div class="contact-inner">
+        <h2 class="contact-heading">Let's build<br/>something<br/><span class="accent">together.</span></h2>
+        <div class="contact-right">
+          <p class="contact-sub">Open to cloud engineering, DevOps, and infrastructure roles. Let's talk.</p>
+          <div class="contact-links">
+            <a href="mailto:shresthsanskar2000@gmail.com" class="contact-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              shresthsanskar2000@gmail.com
+            </a>
+            <a href="https://linkedin.com/in/shresth-sanskar" target="_blank" rel="noopener" class="contact-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/shres8" target="_blank" rel="noopener" class="contact-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              GitHub
+            </a>
+          </div>
+          <a href="mailto:shresthsanskar2000@gmail.com" class="btn-primary contact-btn">Send a message</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <span class="nav-logo">ss<span class="accent">.</span></span>
+        <span class="footer-copy">© 2025 Shresth Sanskar. Built with HTML & CSS.</span>
+        <span class="footer-right">Bengaluru, India</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Typed effect
+    const roles = [
+      'AWS Cloud Engineer',
+      'DevOps Operations',
+      'Infrastructure Operations',
+      'Terraform Operations',
+      'Kubernetes Operations'
+    ];
+    let ri = 0, ci = 0, deleting = false;
+    const el = document.getElementById('typed');
+    function type() {
+      const word = roles[ri];
+      if (!deleting) {
+        el.textContent = word.slice(0, ++ci);
+        if (ci === word.length) { deleting = true; setTimeout(type, 1800); return; }
+      } else {
+        el.textContent = word.slice(0, --ci);
+        if (ci === 0) { deleting = false; ri = (ri + 1) % roles.length; }
+      }
+      setTimeout(type, deleting ? 60 : 100);
+    }
+    type();
+
+    // Navbar scroll
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Hamburger
+    document.getElementById('hamburger').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    });
+    function closeMobile() {
+      document.getElementById('mobileMenu').classList.remove('open');
+    }
+
+    // Reveal on scroll
+    const reveals = document.querySelectorAll('.reveal');
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    reveals.forEach(r => obs.observe(r));
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const t = document.querySelector(a.getAttribute('href'));
+        if (t) t.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
